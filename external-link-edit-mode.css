@@ -1,0 +1,18 @@
+div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-formatting.cm-formatting-link.cm-link{
+    display: none;
+}
+div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-string.cm-url{
+    display: none;
+
+}
+div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-image{
+    visibility: hidden;
+    margin-top: -20;
+}
+
+div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-link:not(.cm-image):not(.cm-formatting)::after {
+    content: '🔗';
+    font-size: 0.7rem;
+    color: black;
+    text-decoration: none;
+}
